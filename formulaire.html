@@ -45,8 +45,14 @@
       <form action="">
         <!-- cadre pour faire afficher la photo de l'utilisateur -->
         <div class="conteneur-photo">
-          <div class="photo fas fa-upload fa-2x" id="display-image"></div>
-          <div><input type="file" id="image-input" accept="image/png, image/jpg" /></div>
+          <div class="photo" id="display-image">
+            <label for="image-input">
+              <i class="fas fa-upload fa-2x"></i>
+            </label>
+          </div>
+          <div>
+            <input type="file" id="image-input" accept="image/png, image/jpg" />
+          </div>
         </div>
 
         <!-- input pour le nom -->
@@ -59,16 +65,16 @@
         <div>
           <span id="errorNom"></span>
         </div>
-        
+
         <!-- input pour l'email -->
         <p><label for="email">Email</label></p>
         <div class="icone">
           <input
-          type="text"
-          name=""
-          id="email"
-          placeholder="Adresse email"
-          required
+            type="text"
+            name=""
+            id="email"
+            placeholder="Adresse email"
+            required
           />
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
@@ -76,16 +82,16 @@
         <div>
           <span id="errorEmail"></span>
         </div>
-        
+
         <!-- input pour le mot de passe -->
         <p><label for="password">Mot de passe</label></p>
         <div class="icone">
           <input
-          type="password"
-          name=""
-          id="password"
-          placeholder="Mot de passe (minimum 5 caractères)"
-          required
+            type="password"
+            name=""
+            id="password"
+            placeholder="Mot de passe (minimum 5 caractères)"
+            required
           />
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
@@ -94,7 +100,7 @@
         <div>
           <span id="errorPassword"></span>
         </div>
-        
+
         <!-- input pour la vérification du mot de passe -->
         <p><label for="password-verif">Vérification Mot de passe</label></p>
         <div class="icone">

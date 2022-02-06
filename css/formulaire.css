@@ -52,8 +52,8 @@ form p {
   gap: 20px;
 }
 .photo {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin: 0 auto;
   background-color: #ccc;
@@ -67,7 +67,7 @@ form p {
   margin-left: auto;
   padding: 0;
   border: none;
-  /* visibility: visible; */
+  visibility: hidden;
 }
 #display-image {
   background-position: center;
@@ -75,7 +75,7 @@ form p {
   background-repeat: no-repeat;
 }
 
-/* ICONES : 5 styles */
+/* ICONES : 6 styles */
 .icone {
   position: relative;
 }
@@ -99,6 +99,9 @@ form p {
   right: 30px;
   visibility: hidden;
   color: #e74c3c;
+}
+.fa-upload {
+  cursor: pointer;
 }
 
 /* INPUT et BUTTON */

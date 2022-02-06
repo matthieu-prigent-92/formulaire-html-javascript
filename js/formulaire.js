@@ -140,35 +140,19 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 });
 
-
 // upload la photo
 let imageInput = document.querySelector("#image-input");
 
-imageInput.addEventListener("change", function (){
+imageInput.addEventListener("change", function () {
   let reader = new FileReader();
   reader.addEventListener("load", () => {
     let uploadedImage = reader.result;
-    document.querySelector("#display-image").style.backgroundImage = `url(${uploadedImage})`;
+    document.querySelector(
+      "#display-image"
+    ).style.backgroundImage = `url(${uploadedImage})`;
     document.querySelector("#display-image").style.backgroundColor = "white";
-    document.querySelector("#display-image").classList.toggle("fa-upload");
-    imageInput.style.visibility = "hidden";
-  });
-    reader.readAsDataURL(this.files[0]);
-});
-
-/*
-
-upload file
-
-const image_input = document.querySelector("#image_input");
-
-image_input.addEventListener("change", function () {
-  const reader = new FileReader();
-  reader.addEventListener("load", () => {
-    const uploaded_image = reader.result;
-    document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`;
+    document.querySelector(".photo").style.alignItems = "flex-end";
+    // imageInput.style.visibility = "hidden";
   });
   reader.readAsDataURL(this.files[0]);
 });
-
-*/
