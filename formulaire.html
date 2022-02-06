@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'inscription</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/formulaire.css" />
+  </head>
+  <body>
+    <!-- début body -->
+
+    <!-- 
+      
+      Liste des icones fontawesome utilisées
+
+      icone de check OK 
+      <i class="fas fa-check-circle"></i>
+
+      icone de check KO
+      <i class="fas fa-exclamation-circle"></i>
+
+      icones de l'oeil pour le password
+      <i class="far fa-eye"></i>
+      <i class="far fa-eye-slash"></i>
+
+      icone pour l'upload photo
+      <i class="fas fa-upload fa-2x"></i>
+
+    -->
+    <div class="conteneur">
+      <!-- Bandeau gris au-dessus du formulaire -->
+      <div class="bandeau">
+        <h2>Rejoignez-nous !</h2>
+      </div>
+
+      <!-- début du formulaire -->
+      <form action="">
+        <!-- cadre pour faire afficher la photo de l'utilisateur -->
+        <div class="conteneur-photo">
+          <div class="photo fas fa-upload fa-2x" id="display-image"></div>
+          <div><input type="file" id="image-input" accept="image/png, image/jpg" /></div>
+        </div>
+
+        <!-- input pour le nom -->
+        <p><label for="nom">Nom</label></p>
+        <div class="icone">
+          <input type="text" name="" id="nom" placeholder="Nom" required />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div>
+          <span id="errorNom"></span>
+        </div>
+        
+        <!-- input pour l'email -->
+        <p><label for="email">Email</label></p>
+        <div class="icone">
+          <input
+          type="text"
+          name=""
+          id="email"
+          placeholder="Adresse email"
+          required
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div>
+          <span id="errorEmail"></span>
+        </div>
+        
+        <!-- input pour le mot de passe -->
+        <p><label for="password">Mot de passe</label></p>
+        <div class="icone">
+          <input
+          type="password"
+          name=""
+          id="password"
+          placeholder="Mot de passe (minimum 5 caractères)"
+          required
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="far fa-eye" id="togglePassword"></i>
+        </div>
+        <div>
+          <span id="errorPassword"></span>
+        </div>
+        
+        <!-- input pour la vérification du mot de passe -->
+        <p><label for="password-verif">Vérification Mot de passe</label></p>
+        <div class="icone">
+          <input
+            type="password"
+            name=""
+            id="password-verif"
+            placeholder="Vérification du mot de passe"
+            required
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="far fa-eye" id="togglePassword-verif"></i>
+        </div>
+        <div>
+          <span id="errorPassword-verif"></span>
+        </div>
+
+        <!-- Bouton pour enregistrer l'inscription -->
+        <!-- bouton à activer lors d'une intégration dans un site -->
+        <div>
+          <button type="submit" id="btn-inscription">S'inscrire</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- début script -->
+    <script src="js/formulaire.js"></script>
+    <!-- fin body -->
+  </body>
+</html>

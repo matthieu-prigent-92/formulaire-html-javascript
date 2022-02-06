@@ -1,0 +1,128 @@
+/*
+    zone de test
+*/
+.boiteR {
+  border: 1px solid red;
+  height: 100px;
+}
+.boiteV {
+  border: 1px solid green;
+}
+
+/*
+    zone de style
+*/
+body {
+  background-color: #4267b2;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteneur {
+  width: 50%;
+  background-color: #fff;
+}
+
+/* BANDEAU : 2 styles */
+.bandeau {
+  background-color: #ccc;
+  height: 50px;
+  text-align: center;
+}
+.bandeau h2 {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/* FORM : 2 styles */
+form {
+  padding: 20px;
+}
+form p {
+  margin-bottom: 2px;
+}
+
+/* CADRE PHOTO : 4 styles */
+.conteneur-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#image-input {
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  /* visibility: visible; */
+}
+#display-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ICONES : 5 styles */
+.icone {
+  position: relative;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+.fa-check-circle {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  visibility: hidden;
+  color: #65da97;
+}
+.fa-exclamation-circle {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  visibility: hidden;
+  color: #e74c3c;
+}
+
+/* INPUT et BUTTON */
+input {
+  width: 95%;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  border: 0;
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  background-color: #4267b2;
+}
+
+/*   MEDIA QUERY    */
+@media (min-width: 320px) and (max-width: 768px) {
+  .conteneur {
+    width: 90%;
+  }
+}
